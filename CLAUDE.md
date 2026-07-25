@@ -29,6 +29,9 @@ among others. Plain class library — no ASP.NET Core dependency.
 - Public API surface is only `SettingsDocument`, `ISettingsDocument<T>`,
   `ISettingsStore`, `SettingsStoreOptionsExtensions`, `Initialization` —
   everything else stays `internal`.
+- Exception: `MartenSettingsStore` is `public` (not `internal`) despite the
+  rule above — Wolverine's `NotAllowed` service-location policy constructs
+  it directly in generated handler code and requires public visibility.
 
 ## Testing
 - Scope: the Marten store and schema-hierarchy behavior (round-trip,
