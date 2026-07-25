@@ -6,9 +6,7 @@ using Testcontainers.PostgreSql;
 namespace AndreGoepel.Marten.Configuration.IntegrationTests.Infrastructure;
 
 /// <summary>
-/// Spins up a Postgres container and a Marten <see cref="IDocumentStore"/> registered with two
-/// distinct settings-document types, so tests can verify the shared-table hierarchy mapping.
-/// Lives for the whole test collection so we pay the container start-up cost once.
+/// Lives for the whole test collection so the Postgres container start-up cost is paid once.
 /// </summary>
 public sealed class MartenFixture : IAsyncLifetime
 {
@@ -24,7 +22,7 @@ public sealed class MartenFixture : IAsyncLifetime
     public async ValueTask InitializeAsync()
     {
         _container = new PostgreSqlBuilder(PostgresImage).Build();
-        await _container.StartAsync();
+        await _container.StartAsync(TestContext.Current.CancellationToken);
 
         Store = DocumentStore.For(opts =>
         {
@@ -41,7 +39,7 @@ public sealed class MartenFixture : IAsyncLifetime
         await _container.DisposeAsync();
     }
 
-    /// <summary>Wipes documents between tests without dropping the schema.</summary>
+    // Wipes documents between tests without dropping the schema.
     public async Task ResetAsync(CancellationToken cancellationToken = default)
     {
         await Store.Advanced.Clean.DeleteAllDocumentsAsync(cancellationToken);
