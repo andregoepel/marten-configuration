@@ -7,7 +7,7 @@
 
   <PropertyGroup>
     <PackageId>AndreGoepel.Marten.Configuration</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Description>Small, singleton admin-configured settings records stored as Marten documents, sharing one physical table instead of each settings type getting its own one-row table.</Description>
     <PackageTags>marten;postgresql;settings;configuration</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
