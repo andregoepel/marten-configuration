@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/AndreGoepel.Marten.Configuration/AndreGoepel.Marten.Configuration.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AndreGoepel.Marten.Configuration.IntegrationTests/AndreGoepel.Marten.Configuration.IntegrationTests.csproj" />
+  </Folder>
+</Solution>
