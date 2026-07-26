@@ -46,3 +46,13 @@ among others. Plain class library — no ASP.NET Core dependency.
 - `AndreGoepel.Marten.Configuration.IntegrationTests` — the Marten store
   and schema-hierarchy behavior (round-trip, shared-table mapping); needs
   Docker for the Postgres container
+
+## Conventions Audit
+- `.editorconfig` is intentionally the 26-line variant (no Razor/CSS/JS
+  sections), not the 45-line variant shared by `marten-identity`,
+  `app-foundation`, `finance-app`, `customer-portal`, and
+  `andregoepel-dev`. This repo is a plain C# class library with no
+  `.razor`/`.cshtml`/`.css`/`.scss`/`.js` files, so those sections would
+  have nothing to apply to. Re-evaluate only if this repo ever gains
+  web-facing content (it shouldn't, per "no ASP.NET Core dependency"
+  above) — don't extend it just to match the other repos byte-for-byte.
