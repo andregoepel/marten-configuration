@@ -20,10 +20,12 @@
 
   <ItemGroup>
     <PackageReference Include="Marten" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Abstractions" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
   </ItemGroup>
 
   <ItemGroup>
+    <InternalsVisibleTo Include="AndreGoepel.Marten.Configuration.Tests" />
     <InternalsVisibleTo Include="AndreGoepel.Marten.Configuration.IntegrationTests" />
   </ItemGroup>
 </Project>

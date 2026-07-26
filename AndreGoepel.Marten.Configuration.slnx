@@ -9,6 +9,7 @@
     <Project Path="src/AndreGoepel.Marten.Configuration/AndreGoepel.Marten.Configuration.csproj" />
   </Folder>
   <Folder Name="/tests/">
+    <Project Path="tests/AndreGoepel.Marten.Configuration.Tests/AndreGoepel.Marten.Configuration.Tests.csproj" />
     <Project Path="tests/AndreGoepel.Marten.Configuration.IntegrationTests/AndreGoepel.Marten.Configuration.IntegrationTests.csproj" />
   </Folder>
 </Solution>
