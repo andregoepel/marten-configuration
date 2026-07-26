@@ -3,7 +3,7 @@ using AndreGoepel.Marten.Configuration.IntegrationTests.Infrastructure;
 namespace AndreGoepel.Marten.Configuration.IntegrationTests;
 
 [Collection(IntegrationCollection.Name)]
-public sealed class MartenSettingsStoreTests(MartenFixture fixture) : IAsyncLifetime
+public sealed class MartenSettingsStoreTests(ConfigurationMartenFixture fixture) : IAsyncLifetime
 {
     private CancellationToken Ct => TestContext.Current.CancellationToken;
 
