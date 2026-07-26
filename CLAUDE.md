@@ -27,13 +27,22 @@ among others. Plain class library — no ASP.NET Core dependency.
 - `SaveAsync` sets `SettingsDocument.Id` from `T.DocumentId` itself —
   callers never set it manually.
 - Public API surface is only `SettingsDocument`, `ISettingsDocument<T>`,
-  `ISettingsStore`, `SettingsStoreOptionsExtensions`, `Initialization` —
-  everything else stays `internal`.
+  `ISettingsStore`, `SettingsStoreOptionsExtensions`, `Initialization`,
+  `DataProtectorExtensions` — everything else stays `internal`.
+- `DataProtectorExtensions.ProtectOrKeepExisting` is the shared
+  "protect a new value, or keep the existing ciphertext when the caller
+  left the field blank" round trip for a secret field inside a settings
+  document (SMTP password, API token, provider credential, ...). It takes
+  the caller's own `IDataProtector` — this library never constructs one
+  itself, so it only depends on `Microsoft.AspNetCore.DataProtection.Abstractions`
+  (interfaces only), not the full ASP.NET Core shared framework.
 - Exception: `MartenSettingsStore` is `public` (not `internal`) despite the
   rule above — Wolverine's `NotAllowed` service-location policy constructs
   it directly in generated handler code and requires public visibility.
 
 ## Testing
-- Scope: the Marten store and schema-hierarchy behavior (round-trip,
-  shared-table mapping); integration tests need Docker for the Postgres
-  container
+- `AndreGoepel.Marten.Configuration.Tests` — pure unit tests, no I/O
+  (e.g. `DataProtectorExtensions`)
+- `AndreGoepel.Marten.Configuration.IntegrationTests` — the Marten store
+  and schema-hierarchy behavior (round-trip, shared-table mapping); needs
+  Docker for the Postgres container
