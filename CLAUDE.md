@@ -28,7 +28,13 @@ among others. Plain class library — no ASP.NET Core dependency.
   callers never set it manually.
 - Public API surface is only `SettingsDocument`, `ISettingsDocument<T>`,
   `ISettingsStore`, `SettingsStoreOptionsExtensions`, `Initialization`,
-  `DataProtectorExtensions` — everything else stays `internal`.
+  `DataProtectorExtensions`, `SessionExtensions` — everything else stays
+  `internal`.
+- `SessionExtensions` (`WithSessionAsync` / `LoadOrDefaultAsync` /
+  `StoreAndSaveAsync`) are thin helpers for the recurring
+  open-session → load → store → save-changes shape at Marten call sites
+  (consolidation plan C5, issue #15). Deliberately not a generic
+  repository — don't grow them beyond these three moves.
 - `DataProtectorExtensions.ProtectOrKeepExisting` is the shared
   "protect a new value, or keep the existing ciphertext when the caller
   left the field blank" round trip for a secret field inside a settings
