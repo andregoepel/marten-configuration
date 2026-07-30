@@ -14,5 +14,6 @@ public sealed class ConfigurationMartenFixture : MartenFixture
     {
         options.AddSettingsDocument<FirstTestSettings>();
         options.AddSettingsDocument<SecondTestSettings>();
+        options.RegisterDocumentType<PlainTestDocument>();
     }
 }

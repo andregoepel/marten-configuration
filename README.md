@@ -43,3 +43,26 @@ await settingsStore.SaveAsync(
 `LoadAsync` reads fresh from Postgres on every call (no caching), so a saved change takes effect on the next request without an application restart. `SaveAsync` sets `Id` to the type's `DocumentId` for you, so callers never need to remember it.
 
 Every settings type registered via `AddSettingsDocument<T>()` shares Marten's document-hierarchy subclass mapping under `SettingsDocument`, so they all live in one physical table (`mt_doc_settingsdocument`) rather than proliferating one-row tables.
+
+## Session helpers
+
+`SessionExtensions` bundles the recurring open-session → load → store → save-changes shape into three thin helpers, for any Marten document (not just settings):
+
+```csharp
+// Load-modify-save without the session boilerplate; SaveChangesAsync runs
+// automatically when the delegate completes (and not when it throws).
+await store.WithSessionAsync(
+    async (session, ct) =>
+    {
+        var counter = await session.LoadOrDefaultAsync<CounterDocument>("visits", ct);
+        counter.Count += 1;
+        session.Store(counter);
+    },
+    cancellationToken
+);
+
+// One-shot upsert without a load step.
+await store.StoreAndSaveAsync(document, cancellationToken);
+```
+
+`WithSessionAsync` also has an overload returning the delegate's result, and `LoadOrDefaultAsync<T>` returns a fresh `new T()` instead of `null` when nothing is persisted yet. These are deliberately thin — anything more belongs on a real Marten session, not a generic repository.
