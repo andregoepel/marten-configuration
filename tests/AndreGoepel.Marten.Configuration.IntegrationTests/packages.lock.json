@@ -136,8 +136,8 @@
       },
       "JasperFx": {
         "type": "Transitive",
-        "resolved": "2.35.0",
-        "contentHash": "+UzKoGkAtfuxfAIPvGjtfjF8gV7mjLE1bfbPPkcHvuVEeemFJtTuXYiR2qxJCO4TiBTxRzuWG6CmIy9PoaKh8Q==",
+        "resolved": "2.37.0",
+        "contentHash": "ruclAZLxWdm5njtCp9l4EVTsYPOzQu50iaCRfC/pl/ZhF7jfBGH1J7lZYC8EiAW2UYoDFd//B+Xh8wUrEaLtoA==",
         "dependencies": {
           "FastExpressionCompiler": "5.4.1",
           "ImTools": "4.0.0",
@@ -152,10 +152,10 @@
       },
       "JasperFx.Events": {
         "type": "Transitive",
-        "resolved": "2.35.0",
-        "contentHash": "L1HYGPOwsSne/B4nEeUu4eM0VFWgH6WFNbUc6aol4bfknbxl6NRhpvA25vXKgWCG4dfqeUSjUewjI26RkC31tw==",
+        "resolved": "2.37.0",
+        "contentHash": "DHThtg0wDQ+qmnUp4INm/uZPL6b2ONp1Vd1+KuGiZDTyfJ1kTtNsHgnNqqh5bkmLbNMej6c1HD/P+LBPloB7Ug==",
         "dependencies": {
-          "JasperFx": "2.35.0"
+          "JasperFx": "2.37.0"
         }
       },
       "Microsoft.ApplicationInsights": {
@@ -605,31 +605,31 @@
       },
       "Weasel.Core": {
         "type": "Transitive",
-        "resolved": "9.17.0",
-        "contentHash": "KkIlUx6QS9i1+yk2klpUXeLFaXNWP77+CHQWPnx1wn3QKCz78PNAymI+Lsk/q35Rajzhp+mH7yr7aJrayYttsw==",
+        "resolved": "9.23.0",
+        "contentHash": "QbAiU2kR8DcghHqQME/o3I97rmwvqbFks8PQg2ckRoyICIsqTfKoDmglNgGeZdA7cekgzCBa2tTlk4B23080MA==",
         "dependencies": {
-          "JasperFx": "2.24.1"
+          "JasperFx": "2.37.0"
         }
       },
       "Weasel.Postgresql": {
         "type": "Transitive",
-        "resolved": "9.17.0",
-        "contentHash": "gnRO4Gh280a3OURLHC1uaJZ7eTCDR3ECIpzOJBlUq5vtzHdRFVoZdwQQLxh2WhA1dKeFYNxMeYcMeluG2qDAVg==",
+        "resolved": "9.23.0",
+        "contentHash": "rJH8xM0vI+Zbe0m3PObYzFf/CYdhqy+iYaiY5fiQtvsqjPKUl60IK+O6YlroMyywHxOuSgXvkGI/d4ge0mzfyw==",
         "dependencies": {
           "DistributedLock.Postgres": "1.3.0",
-          "JasperFx.Events": "2.0.0",
+          "JasperFx.Events": "2.37.0",
           "Npgsql": "9.0.4",
           "Npgsql.NetTopologySuite": "9.0.4",
-          "Weasel.Core": "9.17.0"
+          "Weasel.Core": "9.23.0"
         }
       },
       "Weasel.Storage": {
         "type": "Transitive",
-        "resolved": "9.17.0",
-        "contentHash": "r7s13H1xMDx9JK/MiqTRKzZ3rkh2kx9cQMGsoQ2kBsOFaA4F8CMpmkKW+9rC13OAVIxJroaJuGYU0kGMvpFPcg==",
+        "resolved": "9.23.0",
+        "contentHash": "mNgU/X5c+zfu7oZB3pOcyPn3kCsnSrmByuLaKyOqQW8y5jpAvAL2bSiB3UXlyMEKAh1TKqUNV5glGcBi7cNyfw==",
         "dependencies": {
-          "JasperFx.Events": "2.0.0",
-          "Weasel.Core": "9.17.0"
+          "JasperFx.Events": "2.37.0",
+          "Weasel.Core": "9.23.0"
         }
       },
       "xunit.analyzers": {
@@ -702,23 +702,23 @@
       "andregoepel.marten.configuration": {
         "type": "Project",
         "dependencies": {
-          "Marten": "[9.19.0, )",
+          "Marten": "[9.22.2, )",
           "Microsoft.AspNetCore.DataProtection.Abstractions": "[10.0.10, )",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "[10.0.10, )"
         }
       },
       "Marten": {
         "type": "CentralTransitive",
-        "requested": "[9.19.0, )",
-        "resolved": "9.19.0",
-        "contentHash": "4QLFDZ53Rv6pqc25G2ay210H+G5aqbBn/+aMC/t6XBpU5aE1LORKH1RBh8a4SLt0ZZrGBz839W8UQamjBt3tNA==",
+        "requested": "[9.22.2, )",
+        "resolved": "9.22.2",
+        "contentHash": "NLcVXxyGmyt97PgpIZ0IYNZGBgpAZ/PC2Uhrmm9L82l09mrukeRruqlqJuri5Xt0ZItmpXwPSmmALi/aQGGajA==",
         "dependencies": {
-          "JasperFx": "2.35.0",
-          "JasperFx.Events": "2.35.0",
+          "JasperFx": "2.37.0",
+          "JasperFx.Events": "2.37.0",
           "Microsoft.Extensions.Hosting.Abstractions": "10.0.0",
           "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
-          "Weasel.Postgresql": "9.17.0",
-          "Weasel.Storage": "9.17.0"
+          "Weasel.Postgresql": "9.23.0",
+          "Weasel.Storage": "9.23.0"
         }
       },
       "Microsoft.AspNetCore.DataProtection.Abstractions": {
