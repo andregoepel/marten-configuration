@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup Label="Testing">
-    <PackageVersion Include="AndreGoepel.Marten.Testing" Version="1.2.2" />
+    <PackageVersion Include="AndreGoepel.Marten.Testing" Version="1.2.3" />
     <PackageVersion Include="coverlet.collector" Version="10.0.1" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.10.0" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="4.0.0" />
