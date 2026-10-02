@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup Label="Marten">
-    <PackageVersion Include="Marten" Version="9.39.0" />
+    <PackageVersion Include="Marten" Version="9.45.0" />
   </ItemGroup>
 
   <ItemGroup Label="DI">
@@ -21,7 +21,7 @@
 
   <ItemGroup Label="Testing">
     <PackageVersion Include="AndreGoepel.Marten.Testing" Version="1.2.4" />
-    <PackageVersion Include="coverlet.collector" Version="10.0.1" />
+    <PackageVersion Include="coverlet.collector" Version="10.1.0" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="4.0.0" />
     <PackageVersion Include="xunit.v3" Version="4.0.1" />
