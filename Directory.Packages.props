@@ -5,25 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup Label="Marten">
-    <PackageVersion Include="Marten" Version="9.45.0" />
+    <PackageVersion Include="Marten" Version="9.50.3" />
   </ItemGroup>
 
   <ItemGroup Label="DI">
     <PackageVersion
       Include="Microsoft.Extensions.DependencyInjection.Abstractions"
-      Version="10.0.12"
+      Version="10.0.13"
     />
   </ItemGroup>
 
   <ItemGroup Label="DataProtection">
-    <PackageVersion Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="10.0.12" />
+    <PackageVersion Include="Microsoft.AspNetCore.DataProtection.Abstractions" Version="10.0.13" />
   </ItemGroup>
 
   <ItemGroup Label="Testing">
-    <PackageVersion Include="AndreGoepel.Marten.Testing" Version="1.2.6" />
+    <PackageVersion Include="AndreGoepel.Marten.Testing" Version="1.2.7" />
     <PackageVersion Include="coverlet.collector" Version="10.1.0" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
-    <PackageVersion Include="xunit.runner.visualstudio" Version="4.0.0" />
-    <PackageVersion Include="xunit.v3" Version="4.0.1" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="4.0.1" />
+    <PackageVersion Include="xunit.v3" Version="4.0.2" />
   </ItemGroup>
 </Project>
