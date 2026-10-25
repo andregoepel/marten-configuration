@@ -7,7 +7,7 @@
   "project": "marten-configuration",
   "serverId": "AA2DD71C-AaFDycIuQLOXJXX6YWNZ",
   "toolRevision": "752a04b788fd1cdb41e810ab62c184fe141d240a",
-  "baselineAnalysisId": null,
+  "baselineAnalysisId": "3e828163-c462-471e-a9cf-8efe5e05bb74",
   "maximumRunAgeMinutes": 120,
   "evidenceLifetimeMinutes": 60,
   "conditions": [
