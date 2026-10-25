@@ -19,6 +19,7 @@ public static class SessionExtensions
         CancellationToken cancellationToken = default
     )
     {
+        ArgumentNullException.ThrowIfNull(store);
         ArgumentNullException.ThrowIfNull(work);
 
         await using var session = store.LightweightSession();
@@ -37,6 +38,7 @@ public static class SessionExtensions
         CancellationToken cancellationToken = default
     )
     {
+        ArgumentNullException.ThrowIfNull(store);
         ArgumentNullException.ThrowIfNull(work);
 
         await using var session = store.LightweightSession();
@@ -56,6 +58,8 @@ public static class SessionExtensions
     )
         where T : class, new()
     {
+        ArgumentNullException.ThrowIfNull(session);
+
         return await session.LoadAsync<T>(id, cancellationToken) ?? new T();
     }
 
@@ -70,6 +74,7 @@ public static class SessionExtensions
     )
         where T : notnull
     {
+        ArgumentNullException.ThrowIfNull(store);
         ArgumentNullException.ThrowIfNull(document);
 
         await using var session = store.LightweightSession();

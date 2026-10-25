@@ -5,11 +5,12 @@
   "gate": "Marten Library 1.0.0",
   "solution": "AndreGoepel.Marten.Configuration.slnx",
   "tests": {
-    "AndreGoepel.Marten.Configuration.Tests": 6,
+    "AndreGoepel.Marten.Configuration.Tests": 10,
     "AndreGoepel.Marten.Configuration.IntegrationTests": 11
   },
   "coverageAnchors": [
-    "src/AndreGoepel.Marten.Configuration/MartenSettingsStore.cs"
+    "src/AndreGoepel.Marten.Configuration/MartenSettingsStore.cs",
+    "src/AndreGoepel.Marten.Configuration/SessionExtensions.cs"
   ],
   "sourceExclusions": [
     "**/bin/**",
