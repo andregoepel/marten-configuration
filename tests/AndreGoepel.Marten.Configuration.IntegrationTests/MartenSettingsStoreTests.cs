@@ -5,9 +5,9 @@ namespace AndreGoepel.Marten.Configuration.IntegrationTests;
 [Collection(IntegrationCollection.Name)]
 public sealed class MartenSettingsStoreTests(ConfigurationMartenFixture fixture) : IAsyncLifetime
 {
-    private CancellationToken Ct => TestContext.Current.CancellationToken;
+    private static CancellationToken Ct => TestContext.Current.CancellationToken;
 
-    private ISettingsStore Store => new MartenSettingsStore(fixture.Store);
+    private MartenSettingsStore Store => new(fixture.Store);
 
     public async ValueTask InitializeAsync() => await fixture.ResetAsync(Ct);
 

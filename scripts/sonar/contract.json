@@ -1,0 +1,20 @@
+{
+  "sdk": "10.0.402",
+  "serverVersion": "26.10.0.133078",
+  "centralServerId": "AA2DD71C-AaFDycIuQLOXJXX6YWNZ",
+  "gate": "Marten Library 1.0.0",
+  "solution": "AndreGoepel.Marten.Configuration.slnx",
+  "tests": {
+    "AndreGoepel.Marten.Configuration.Tests": 6,
+    "AndreGoepel.Marten.Configuration.IntegrationTests": 11
+  },
+  "coverageAnchors": [
+    "src/AndreGoepel.Marten.Configuration/MartenSettingsStore.cs"
+  ],
+  "sourceExclusions": [
+    "**/bin/**",
+    "**/obj/**",
+    "**/.sonarqube/**",
+    "artifacts/**"
+  ]
+}
