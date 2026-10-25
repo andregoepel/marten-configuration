@@ -8,7 +8,9 @@ on:
 
 jobs:
   ci:
-    uses: andregoepel/workflows/.github/workflows/ci-library.yml@main
+    uses: andregoepel/workflows/.github/workflows/ci-library.yml@752a04b788fd1cdb41e810ab62c184fe141d240a
+    with:
+      dotnet-version: '10.0.402'
 
   # Runs as a local job (not inside ci-library.yml) because NuGet.org Trusted
   # Publishing validates job_workflow_ref against the workflow that defines
@@ -24,6 +26,7 @@ jobs:
     steps:
       - uses: andregoepel/workflows/.github/actions/nuget-publish@main
         with:
+          dotnet-version: "10.0.402"
           pack-projects: |
             src/AndreGoepel.Marten.Configuration/AndreGoepel.Marten.Configuration.csproj
           nuget-user: ${{ secrets.NUGET_USER }}

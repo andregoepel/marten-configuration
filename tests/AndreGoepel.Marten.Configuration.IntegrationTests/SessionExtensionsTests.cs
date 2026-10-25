@@ -6,7 +6,7 @@ namespace AndreGoepel.Marten.Configuration.IntegrationTests;
 [Collection(IntegrationCollection.Name)]
 public sealed class SessionExtensionsTests(ConfigurationMartenFixture fixture) : IAsyncLifetime
 {
-    private CancellationToken Ct => TestContext.Current.CancellationToken;
+    private static CancellationToken Ct => TestContext.Current.CancellationToken;
 
     private IDocumentStore Store => fixture.Store;
 

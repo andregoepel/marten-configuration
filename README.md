@@ -66,3 +66,7 @@ await store.StoreAndSaveAsync(document, cancellationToken);
 ```
 
 `WithSessionAsync` also has an overload returning the delegate's result, and `LoadOrDefaultAsync<T>` returns a fresh `new T()` instead of `null` when nothing is persisted yet. These are deliberately thin — anything more belongs on a real Marten session, not a generic repository.
+
+## Sonar and publication gate
+
+See [local analysis and inactive NuGet gate preparation](docs/sonar.md).
