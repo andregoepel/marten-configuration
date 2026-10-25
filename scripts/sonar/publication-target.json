@@ -1,6 +1,6 @@
 {
   "repository": "andregoepel/marten-configuration",
-  "readinessWorkflowId": 0,
+  "readinessWorkflowId": 395675989,
   "packages": [
     "AndreGoepel.Marten.Configuration"
   ],
