@@ -1,0 +1,14 @@
+{
+  "repository": "andregoepel/marten-configuration",
+  "runId": 41111071922,
+  "sha": "244f91683e65e104e4a3fbe8cab0e8b155103d2d",
+  "attempt": 1,
+  "protectedJobId": 124253348439,
+  "environment": "nuget-publish",
+  "expectedOwner": "andre.goepel",
+  "result": "success",
+  "publisher": "skipped",
+  "artifactCount": 0,
+  "packageUploadPerformed": false,
+  "recordedAt": "2026-10-30T18:59:09.5133971Z"
+}
