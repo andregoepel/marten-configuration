@@ -2,7 +2,7 @@
 
 Tracking: [Issue #63](https://github.com/andregoepel/marten-configuration/issues/63).
 Stand: 30. Oktober 2026. Diese Dokumentation hält installierte Kontrollen fest;
-die Vorbereitung und Veröffentlichung bleiben deaktiviert.
+auf main bleiben Vorbereitung und Veröffentlichung bis zum separaten Aktivierungs-Merge deaktiviert.
 
 ## Abgenommener Hauptbranch
 
@@ -108,3 +108,6 @@ Workflows, Abhängigkeiten oder Credentials.
 Siehe [den geschützten, schreibfreien Prüfplan](sonar-production-token-check.md).
 Die Metadaten sind geprüft; die tatsächlichen Workflow-Prüfungen der neuen Secrets
 stehen noch aus. Die Produktionssperren bleiben erhalten.
+
+Der nachfolgende [Aktivierungsentwurf](nuget-activation-review.md) dokumentiert die
+neuen geschützten Prüfläufe, die vorbereiteten Änderungen und die offenen Merge-Bedingungen.
