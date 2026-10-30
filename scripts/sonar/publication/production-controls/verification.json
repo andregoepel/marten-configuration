@@ -1,0 +1,39 @@
+{
+  "verifiedAt": "2026-10-30T16:25:58.635665Z",
+  "repository": "andregoepel/marten-configuration",
+  "mainSha": "22203e6fdf6511f03495e6915ff83ea740aa7521",
+  "productionRulesetId": 26220304,
+  "tagPattern": "refs/tags/v*",
+  "bypassActors": [],
+  "updateRejectedViaGitPush": true,
+  "deletionRejectedViaGitPush": true,
+  "originalTestTargetUnchanged": true,
+  "temporaryResourcesRemoved": true,
+  "productionJobsEnabled": false,
+  "credentialsTransferred": false,
+  "nugetPolicyVerified": true,
+  "releaseCreated": false,
+  "environments": [
+    {
+      "refType": "tag",
+      "reviewerId": 22834588,
+      "pattern": "v*",
+      "canAdminsBypass": false,
+      "name": "sonar-nuget-prepare"
+    },
+    {
+      "refType": "branch",
+      "reviewerId": 22834588,
+      "pattern": "main",
+      "canAdminsBypass": false,
+      "name": "nuget-publish"
+    }
+  ],
+  "nugetWorkflow": "nuget-publish.yml",
+  "nugetEnvironment": "nuget-publish",
+  "nugetScope": "Push only new package versions",
+  "package": "AndreGoepel.Marten.Configuration",
+  "nugetAccountApiKeysPresent": false,
+  "nugetOverlappingPoliciesPresent": false,
+  "nugetInventoryDate": "2026-10-30"
+}
