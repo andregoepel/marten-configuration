@@ -1,7 +1,7 @@
 # Review der geschützten NuGet-Aktivierung
 
-Tracking: [Issue #63](https://github.com/andregoepel/marten-configuration/issues/63). Stand: 31. Oktober 2026.
-Dieser PR bleibt ein Entwurf; die Produktionsjobs auf main sind weiterhin gesperrt.
+Tracking: [Issue #63](https://github.com/andregoepel/marten-configuration/issues/63). Stand: 1. November 2026.
+Dieser PR ist zur Prüfung vorbereitet; die Produktionsjobs auf main sind weiterhin gesperrt.
 
 Die NuGet-Benutzeridentität andre.goepel ist bestätigt, sicher hinterlegt und durch
 einen tatsächlichen geschützten OIDC-Anmeldetest ohne Upload geprüft. Die neuen
@@ -49,10 +49,30 @@ wurde mit erhaltenen bestehenden Server-Schlüsseln separat verifiziert.
 Das gewählte lokale unabhängige Archiv der verfügbaren Originalbelege ist erstellt
 und über Original-Digests und einen erneut geprüften Hash-Index verifiziert.
 Die fehlenden historischen Ein-Tages-Archive bleiben eine ausdrücklich dokumentierte
-Lücke. Die vorgesehene Aufbewahrung wird im Review auf 90 Tage abgestimmt; Gültigkeit
+Lücke. Die separat gemergte Aufbewahrung beträgt inzwischen 90 Tage; Gültigkeit
 und Sicherheitsprüfungen bleiben unverändert. Maßgeblich sind
 [Archivprotokoll und Grenzen](nuget-evidence-archive.md). Keine Veröffentlichung.
 
 Die getrennten Standby-Aufbewahrungsreviews sind am 1. November 2026 genehmigt
 gemergt worden; dieser Aktivierungsentwurf ist auf den neuen main abgeglichen.
 Die Publishing-Aktivierung selbst bleibt weiterhin ungemergt.
+
+## Aktualisierte Aktivierungsvorprüfung vom 1. November 2026
+
+Aktueller geprüfter main: 979cf92f5f3b738ad59acc2c685464b0980f180e. [CI 41297052537](https://github.com/andregoepel/marten-configuration/actions/runs/41297052537)
+und [geschützter Sonar-Lauf 41297125763](https://github.com/andregoepel/marten-configuration/actions/runs/41297125763)
+sind erfolgreich: 21 Tests, Coverage 95.1 %, Gate OK,
+unveränderte Baseline, analysisReady=true und releaseEligible=false. Dies ist ein
+commitgebundener Abnahmebeleg; die ursprüngliche Receipt-Ablaufzeit bleibt erhalten.
+
+Produktions-Environments und unveränderliche v*-Regeln wurden erneut lesend geprüft:
+Preparation nur Tags v*, Publisher nur main, Reviewer 22834588 und kein Admin-Bypass.
+Keine temporäre main-Freigabe ist vorhanden. Die NuGet-Policy-/Kontoinventur bleibt
+der historische Nachweis vom 30. Oktober und wurde hier nicht erneut im Konto geprüft.
+Die [sanitisierte Vorprüfung](../scripts/sonar/publication/production-controls/activation-preflight-2026-11-01.json)
+verknüpft Schutzregeln, aktuelle Main-Nachweise und das erweiterte lokale Archiv.
+
+Nach einem separat freigegebenen Aktivierungs-Merge sind neue CI-/Sonar-Nachweise
+für dessen exakten main nötig. Release-Version, Commit, Tag und Upload bleiben
+separat freizugeben; echte Paket-/Symbol-Annahme und gehostete annotierte Release-Tag-
+Abnahme sind weiterhin offen. Dieser Review-Schritt führt keinen Merge, Tag oder Upload aus.
