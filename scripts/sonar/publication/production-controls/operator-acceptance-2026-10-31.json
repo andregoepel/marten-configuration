@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "repository": "andregoepel/marten-configuration",
+  "recordedAt": "2026-10-31T11:58:40.4447167Z",
+  "sharedVerifierRevision": "ebc566218aaa60684d23483c63f974e222d8f7f2",
+  "identityCheck": {
+    "result": "success",
+    "attempt": 1,
+    "owner": "andre.goepel",
+    "publisher": "skipped",
+    "runId": 41111071922,
+    "artifactCount": 0
+  },
+  "failurePullRequest": 75,
+  "recoveryPullRequest": 78,
+  "clean": {
+    "commit": "33a47849ceea4426b3ab838961d7a948dc42a53e",
+    "runId": 41196053666,
+    "attempt": 1,
+    "ciRunId": 41113565244,
+    "ciAttempt": 3,
+    "taskId": "9644b2ea-8ec4-4ebd-88b6-d425d893f263",
+    "analysisId": "ed0e50d9-ba79-4567-b440-a3de1194826a",
+    "computeEngineStatus": "SUCCESS",
+    "gateStatus": "OK",
+    "coverage": "95.1",
+    "gateConditions": [
+      {
+        "status": "OK",
+        "metricKey": "new_coverage",
+        "comparator": "LT",
+        "errorThreshold": "80",
+        "actualValue": "100.0"
+      },
+      {
+        "status": "OK",
+        "metricKey": "coverage",
+        "comparator": "LT",
+        "errorThreshold": "80",
+        "actualValue": "95.1"
+      },
+      {
+        "status": "OK",
+        "metricKey": "new_duplicated_lines_density",
+        "comparator": "GT",
+        "errorThreshold": "3",
+        "actualValue": "0.0"
+      },
+      {
+        "status": "OK",
+        "metricKey": "new_violations",
+        "comparator": "GT",
+        "errorThreshold": "0",
+        "actualValue": "0"
+      },
+      {
+        "status": "OK",
+        "metricKey": "violations",
+        "comparator": "GT",
+        "errorThreshold": "0",
+        "actualValue": "0"
+      }
+    ],
+    "baselineAnalysisId": "3e828163-c462-471e-a9cf-8efe5e05bb74",
+    "ignoredConditions": false,
+    "sourceSha256": "997585b67ac31119f7e1c2b45e91004514fa0ee7593928c68f2869d9846485bb",
+    "contractSha256": "07580ffefb25f55678ce50d074252a0363d5d8272bda37c4662e4fc68cf3ef7c",
+    "tests": {
+      "AndreGoepel.Marten.Configuration.Tests": {
+        "passed": 10,
+        "discovered": 10
+      },
+      "AndreGoepel.Marten.Configuration.IntegrationTests": {
+        "passed": 11,
+        "discovered": 11
+      }
+    },
+    "hasReadinessReceipt": true,
+    "analysisReady": true,
+    "releaseEligible": false,
+    "receiptIssuedAt": "2026-10-31T12:23:56.4066169+01:00",
+    "receiptExpiresAt": "2026-10-31T13:23:56.4066169+01:00"
+  },
+  "failure": {
+    "commit": "59c79e9f454a553e1ded6c3393ac82515542bb97",
+    "runId": 41197619056,
+    "attempt": 1,
+    "ciRunId": 41197549419,
+    "ciAttempt": 1,
+    "taskId": "9c389856-79d3-40bf-972b-f1f350b698d2",
+    "analysisId": "6261a28e-e6c0-47b2-84a4-b919c3407ba9",
+    "computeEngineStatus": "SUCCESS",
+    "gateStatus": "ERROR",
+    "coverage": "33.9",
+    "gateConditions": [
+      {
+        "status": "ERROR",
+        "metricKey": "new_coverage",
+        "comparator": "LT",
+        "errorThreshold": "80",
+        "actualValue": "5.1"
+      },
+      {
+        "status": "ERROR",
+        "metricKey": "coverage",
+        "comparator": "LT",
+        "errorThreshold": "80",
+        "actualValue": "33.9"
+      },
+      {
+        "status": "OK",
+        "metricKey": "new_duplicated_lines_density",
+        "comparator": "GT",
+        "errorThreshold": "3",
+        "actualValue": "0.0"
+      },
+      {
+        "status": "OK",
+        "metricKey": "new_violations",
+        "comparator": "GT",
+        "errorThreshold": "0",
+        "actualValue": "0"
+      },
+      {
+        "status": "OK",
+        "metricKey": "violations",
+        "comparator": "GT",
+        "errorThreshold": "0",
+        "actualValue": "0"
+      }
+    ],
+    "baselineAnalysisId": "3e828163-c462-471e-a9cf-8efe5e05bb74",
+    "ignoredConditions": false,
+    "sourceSha256": "5df5b9030b3c4b79d634be060c6df0051c0bfc3ef38401d67f63b45a41d69e8a",
+    "contractSha256": "07580ffefb25f55678ce50d074252a0363d5d8272bda37c4662e4fc68cf3ef7c",
+    "tests": {
+      "AndreGoepel.Marten.Configuration.Tests": {
+        "passed": 10,
+        "discovered": 10
+      },
+      "AndreGoepel.Marten.Configuration.IntegrationTests": {
+        "passed": 11,
+        "discovered": 11
+      }
+    },
+    "hasReadinessReceipt": false,
+    "analysisReady": false,
+    "releaseEligible": false,
+    "receiptIssuedAt": null,
+    "receiptExpiresAt": null
+  },
+  "recovery": {
+    "commit": "fef9110b60a014c687d624b70cd51c8af5e4b10f",
+    "runId": 41198167945,
+    "attempt": 1,
+    "ciRunId": 41198094427,
+    "ciAttempt": 1,
+    "taskId": "da917f8f-291f-4cdb-a81a-d6849bd2e2ec",
+    "analysisId": "d9621f29-be02-47ad-85ba-6b54fda37074",
+    "computeEngineStatus": "SUCCESS",
+    "gateStatus": "OK",
+    "coverage": "95.1",
+    "gateConditions": [
+      {
+        "status": "OK",
+        "metricKey": "new_coverage",
+        "comparator": "LT",
+        "errorThreshold": "80",
+        "actualValue": "100.0"
+      },
+      {
+        "status": "OK",
+        "metricKey": "coverage",
+        "comparator": "LT",
+        "errorThreshold": "80",
+        "actualValue": "95.1"
+      },
+      {
+        "status": "OK",
+        "metricKey": "new_duplicated_lines_density",
+        "comparator": "GT",
+        "errorThreshold": "3",
+        "actualValue": "0.0"
+      },
+      {
+        "status": "OK",
+        "metricKey": "new_violations",
+        "comparator": "GT",
+        "errorThreshold": "0",
+        "actualValue": "0"
+      },
+      {
+        "status": "OK",
+        "metricKey": "violations",
+        "comparator": "GT",
+        "errorThreshold": "0",
+        "actualValue": "0"
+      }
+    ],
+    "baselineAnalysisId": "3e828163-c462-471e-a9cf-8efe5e05bb74",
+    "ignoredConditions": false,
+    "sourceSha256": "997585b67ac31119f7e1c2b45e91004514fa0ee7593928c68f2869d9846485bb",
+    "contractSha256": "07580ffefb25f55678ce50d074252a0363d5d8272bda37c4662e4fc68cf3ef7c",
+    "tests": {
+      "AndreGoepel.Marten.Configuration.Tests": {
+        "passed": 10,
+        "discovered": 10
+      },
+      "AndreGoepel.Marten.Configuration.IntegrationTests": {
+        "passed": 11,
+        "discovered": 11
+      }
+    },
+    "hasReadinessReceipt": true,
+    "analysisReady": true,
+    "releaseEligible": false,
+    "receiptIssuedAt": "2026-10-31T12:48:31.5238941+01:00",
+    "receiptExpiresAt": "2026-10-31T13:48:31.5238941+01:00"
+  },
+  "recoveryFullTreeEqualsClean": true,
+  "scansSequential": true,
+  "baselineReset": false,
+  "gateWeakened": false,
+  "packageUploadPerformed": false,
+  "releaseTagCreated": false,
+  "remotePackageAcceptanceVerified": false,
+  "annotatedReleaseTagHostedTest": false,
+  "externalArchiveConfigured": false,
+  "hostResourceCheck": {
+    "authorized": true,
+    "hostFingerprintConfirmed": true,
+    "status": "point-in-time resource check completed after sequential scans",
+    "measurementCount": 2,
+    "measuredDuringAnalysis": false,
+    "hostMemoryTotalMiB": 11914,
+    "hostMemoryAvailableMiB": [
+      6708,
+      6738
+    ],
+    "minimumAvailableMemoryPercent": 56.3,
+    "rootDiskTotalMiB": 236993,
+    "rootDiskAvailableMiB": 175789,
+    "rootDiskFreePercent": 74.2,
+    "loadAverageOneMinute": [
+      "0.17",
+      "0.12"
+    ],
+    "sonarContainerMemoryGiB": 2.277,
+    "sonarContainerLimitGiB": 5,
+    "sonarContainerMemoryPercent": 45.55,
+    "databaseContainerMemoryMiB": 124.2,
+    "databaseContainerLimitGiB": 1,
+    "databaseContainerMemoryPercent": 12.13,
+    "dedicatedCapacityExerciseCompleted": false,
+    "globalSshConfigChanged": false,
+    "otherServerConfigurationChanged": false,
+    "notebookPublicKeyAdded": true,
+    "notebookPrivateKeyAuthenticationVerifiedWithoutAgent": true,
+    "existingServerKeysPreserved": true,
+    "privateKeyContentsTransferred": false
+  },
+  "historicalRecordOnly": true,
+  "releaseEligible": false
+}
