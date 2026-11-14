@@ -11,7 +11,7 @@
   <ItemGroup Label="DI">
     <PackageVersion
       Include="Microsoft.Extensions.DependencyInjection.Abstractions"
-      Version="10.0.13"
+      Version="11.0.0"
     />
   </ItemGroup>
 
